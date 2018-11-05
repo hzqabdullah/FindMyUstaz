@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/color1"
+    tools:context=".activity.Ustaz.Profile.ProfileUpdate">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="top"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color4">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/back"
+                        android:layout_gravity="center"
+                        android:onClick="GoToProfileActivity"/>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif-monospace"
+                        android:paddingLeft="25dp"
+                        android:text="Profile Update"
+                        android:layout_gravity="center"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+
+
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="537dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/layoutdashboard">
+
+                        <LinearLayout
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Profile Photo"
+                                android:textAlignment="center"
+                                android:textSize="12dp"
+                                android:textStyle="bold"
+                                tools:fontFamily="sans-serif-condensed" />
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/ustazPhoto"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:src="@drawable/ustaz"
+                                app:civ_border_width="1dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center"
+                                app:civ_border_color="@color/color4"/>
+
+                            <ImageView
+                                android:id="@+id/btnUpload"
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="5dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/upload1" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/txtFirstname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            android:ems="10"
+                            android:hint="First name"
+                            android:inputType="textPersonName"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-condensed"
+                            android:background="@drawable/edittext1"
+                            android:padding="8dp"/>
+
+                        <EditText
+                            android:id="@+id/txtLastname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="8dp"
+                            android:ems="10"
+                            android:hint="Last name"
+                            android:inputType="textPersonName"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-condensed"
+                            android:background="@drawable/edittext1"
+                            android:padding="8dp"/>
+
+                        <EditText
+                            android:id="@+id/txtProfilename"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="8dp"
+                            android:ems="10"
+                            android:hint="Profile name"
+                            android:inputType="textPersonName"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-condensed"
+                            android:background="@drawable/edittext1"
+                            android:padding="8dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/txtDob"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:hint="Date of birth"
+                        android:inputType="date"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"
+                        android:background="@drawable/edittext1"
+                        android:padding="8dp"/>
+
+
+                    <ImageView
+                        android:id="@+id/clickDate"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/newcalendar"
+                        />
+
+                </LinearLayout>
+
+                        <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtPlace"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Hometown"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:background="@drawable/edittext1"/>
+
+                 <Spinner
+                     android:id="@+id/spinner"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_marginLeft="5dp">
+
+                 </Spinner>
+
+             </LinearLayout>
+
+                                <EditText
+                                    android:id="@+id/txtContact"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/edittext1"
+                                    android:ems="10"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:hint="Contact"
+                                    android:inputType="phone"
+                                    android:padding="8dp"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold" />
+
+                         <EditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                             android:textSize="12dp"
+                             android:textStyle="bold"
+                             android:fontFamily="sans-serif-condensed"
+                    android:background="@drawable/edittext1"
+                    android:padding="8dp"/>
+
+                            </LinearLayout>
+
+
+
+                        <Button
+                    android:id="@+id/btnProfileUpdate"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button1"
+                    android:text="Update Profile"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif-monospace" />
+
+                        <Button
+                    android:onClick="btnProfileReset"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button1"
+                    android:text="Reset"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif-monospace"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+    </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:background="@color/color4">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:id="@+id/datetime"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="3dp"
+                        android:text="datetime"
+                        android:textAlignment="center"
+                        android:background="@color/color4"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="16sp"
+                        android:fontFamily="serif-monospace"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

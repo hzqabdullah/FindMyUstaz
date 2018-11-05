@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/color1"
+    tools:context=".activity.Ustaz.Event.EventAdd">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="top"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color4">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/back"
+                        android:layout_gravity="center"
+                        android:onClick="GoToEventDisplay"/>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif-monospace"
+                        android:paddingLeft="25dp"
+                        android:text="Create Event"
+                        android:layout_gravity="center"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+
+
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="537dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/layoutdashboard">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnCount="2"
+                    android:rowCount="1"
+                    android:orientation="horizontal">
+
+                     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event banner"
+                android:textAlignment="center"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                tools:fontFamily="sans-serif-condensed" />
+
+            <ImageView
+                android:id="@+id/eventBanner"
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/placeholder" />
+
+            <ImageView
+                android:id="@+id/btnUpload"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_gravity="right"
+                android:scaleType="fitXY"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/upload1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+
+
+                    <EditText
+                        android:id="@+id/txtCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="25dp"
+                        android:hint="Category"
+                        android:inputType="textPersonName"
+                        android:textColorLink="@android:color/holo_blue_dark"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        tools:fontFamily="sans-serif-condensed"
+                        android:background="@drawable/edittext1"
+                        android:padding="8dp"/>
+
+
+                    <EditText
+                        android:id="@+id/txtTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:hint="Title"
+                        android:inputType="textPersonName"
+                        android:textColorLink="@android:color/holo_blue_dark"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        tools:fontFamily="sans-serif-condensed"
+                        android:background="@drawable/edittext1"
+                        android:padding="8dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:id="@+id/txtDate"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="Start event"
+                            android:inputType="date"
+                            android:textColorLink="@android:color/holo_blue_dark"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            tools:fontFamily="sans-serif-condensed"
+                            android:background="@drawable/edittext1"
+                            android:padding="8dp"/>
+
+
+                        <ImageView
+                            android:id="@+id/clickDate"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:scaleType="fitXY"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/newcalendar" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:id="@+id/txtDateEnd"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="End event"
+                            android:inputType="date"
+                            android:textColorLink="@android:color/holo_blue_dark"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            tools:fontFamily="sans-serif-condensed"
+                            android:background="@drawable/edittext1"
+                            android:padding="8dp"/>
+
+
+                        <ImageView
+                            android:id="@+id/clickDate2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:scaleType="fitXY"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/newcalendar" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:text="Day"
+                            android:id="@+id/txtDay"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            tools:fontFamily="sans-serif-condensed"
+                            android:background="@drawable/edittext1"
+                            android:padding="8dp"/>
+
+                        <Spinner
+                            android:id="@+id/spinnerDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                        </Spinner>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:id="@+id/txtTime"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="Time"
+                            android:inputType="time"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            tools:fontFamily="sans-serif-condensed"
+                            android:background="@drawable/edittext1"
+                            android:padding="8dp"/>
+
+
+                        <ImageView
+                            android:id="@+id/clickTime"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:scaleType="fitXY"
+                            android:layout_gravity="center"
+                            android:src="@drawable/newclock"
+                            android:layout_marginLeft="5dp"/>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/txtVenue"
+                        android:layout_width="220dp"
+                        android:layout_height="70dp"
+                        android:gravity="top|left"
+                        android:layout_marginTop="10dp"
+                        android:hint="Venue"
+                        android:inputType="textMultiLine"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        tools:fontFamily="sans-serif-condensed"
+                        android:background="@drawable/edittext1"
+                        android:padding="8dp"/>
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/txtPlace"
+                            android:layout_width="220dp"
+                            android:layout_height="70dp"
+                            android:hint="Address"
+                            android:inputType="textMultiLine"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            tools:fontFamily="sans-serif-condensed"
+                            android:background="@drawable/edittext1"
+                            android:padding="8dp"/>
+
+                        <ImageView
+                            android:id="@+id/clickPlace"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="bottom|right"
+                            android:scaleType="fitXY"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/newmaps" />
+
+
+                    </LinearLayout>
+
+                    <Button
+                    android:id="@+id/btnAddLecture"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button1"
+                    android:fontFamily="serif-monospace"
+                    android:onClick="eventAdd"
+                    android:text="Create Event"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    />
+
+                    <Button
+                        android:layout_width="230dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button1"
+                        android:fontFamily="serif-monospace"
+                        android:onClick="Clear"
+                        android:text="Clear"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    </GridLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:background="@color/color4">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:id="@+id/datetime"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="3dp"
+                        android:text="datetime"
+                        android:textAlignment="center"
+                        android:background="@color/color4"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="14dp"
+                        android:fontFamily="serif-monospace"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

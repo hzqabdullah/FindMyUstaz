@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/color1"
+    tools:context=".activity.Ustaz.Shop.ShopActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="top"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color4">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/back"
+                        android:layout_gravity="center"
+                        android:onClick="GoToDashboard"/>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif-monospace"
+                        android:paddingLeft="25dp"
+                        android:text="Ustaz Shop"
+                        android:layout_gravity="center"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+
+
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnDisplay"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/button1"
+        android:onClick="GoToShopDisplay"
+        android:text="Display PRODUCTS"
+        android:textColor="@android:color/background_light"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
+        />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="55dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button1"
+        android:text="Add Product"
+        android:onClick="GoToShopAdd"
+        android:textColor="@android:color/background_light"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"/>
+
+
+</LinearLayout>

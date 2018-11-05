@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.macbook.eventapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/fmuorganizer_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.Ustaz.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB71uFwKHA3zjiZWvTTCUogLsWb_RX8bFw" />
+
+        <activity android:name=".activity.Ustaz.Event.EventAdd" />
+        <activity android:name=".activity.Ustaz.Event.EventActivity" />
+        <activity android:name=".activity.Ustaz.Event.EventManage" />
+        <activity android:name=".activity.Ustaz.Event.EventDisplay" />
+        <activity android:name=".activity.Ustaz.Dashboard" />
+        <activity android:name=".activity.Ustaz.Profile.ProfileActivity" />
+        <activity android:name=".activity.Ustaz.Profile.ProfileUpdate" />
+        <activity android:name=".activity.Ustaz.Shop.ShopActivity" />
+        <activity android:name=".activity.Ustaz.Shop.ShopDisplay" />
+        <activity android:name=".activity.Ustaz.Shop.ShopAdd" />
+        <activity android:name=".activity.Ustaz.Shop.ShopManage" />
+        <activity android:name=".activity.Ustaz.Register" />
+        <activity android:name=".activity.Ustaz.Event.EventDetails" />
+        <activity android:name=".activity.Ustaz.Shop.ShopDetails" />
+        <activity android:name=".activity.Ustaz.Event.EventArchive" />
+        <activity android:name=".activity.Ustaz.Event.EventArchiveDetails" />
+        <activity android:name=".activity.Ustaz.Event.ViewComment" />
+        <activity android:name=".activity.Ustaz.Order.OrderActivity" />
+        <activity android:name=".activity.Ustaz.Order.OrderHistory"></activity>
+    </application>
+
+</manifest>

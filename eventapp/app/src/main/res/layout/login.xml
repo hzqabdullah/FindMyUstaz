@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/newmosque1"
+    tools:context="com.example.macbook.eventapp.activity.Ustaz.Login">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/fmubanner2" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:padding="8dp"
+            android:hint="Email"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:inputType="textPersonName"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@drawable/edittext1"/>
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/edittext1"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtICNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="12"
+            android:layout_marginTop="7dp"
+            android:hint="IC No"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:inputType="numberPassword"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@drawable/edittext1"
+            android:padding="8dp"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Login"
+            android:textColor="@android:color/background_light"
+            android:background="@drawable/button1"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:onClick="GoToRegister"
+            android:textColor="@android:color/background_light"
+            android:background="@drawable/button1"
+            android:text="Register"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+    </LinearLayout>
+
+</LinearLayout>

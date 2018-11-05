@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.haziq.findmyustaz">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/fmu_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB71uFwKHA3zjiZWvTTCUogLsWb_RX8bFw" />
+
+        <activity android:name=".Register" />
+        <activity android:name=".Dashboard" />
+        <activity android:name=".Login" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Search" />
+        <activity android:name=".Favourite" />
+        <activity android:name=".ProfileUpdate" />
+        <activity android:name=".EventDetails" />
+        <activity android:name=".UstazProfile" />
+        <activity android:name=".UstazEvent" />
+        <activity android:name=".UstazShop" />
+        <activity android:name=".ProductDetails" />
+        <activity android:name=".Cart" />
+        <activity android:name=".CartUpdate" />
+        <activity android:name=".JoinEvent" />
+        <activity android:name=".JoinEventDetails" />
+        <activity android:name=".EnterEvent" />
+        <activity android:name=".RateEvent" />
+        <activity android:name=".SearchProduct" />
+        <activity android:name=".PaymentInfo" />
+        <activity android:name=".DisplayOrder" />
+        <activity android:name=".OrderDetails" />
+        <activity android:name=".PaymentHistory" />
+        <activity android:name=".PaymentHistoryDetails"></activity>
+    </application>
+
+</manifest>
